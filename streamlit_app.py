@@ -20,7 +20,8 @@ DRIVE_ID = "1gjNwy6mzNU4VfEJ9Mb8A7jMwrhQk30Kf"
 
 if not os.path.exists(MODEL_PATH):
     st.info("Downloading model from Google Drive...")
-    gdown.download(id=DRIVE_ID, output=MODEL_PATH, quiet=False)
+    url = f"https://drive.google.com/uc?id={DRIVE_ID}"
+    gdown.download(url, MODEL_PATH, quiet=False, fuzzy=True)
     st.success("Model downloaded!")
 # ---------------------------
 # Load model with caching
