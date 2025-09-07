@@ -15,15 +15,13 @@ from translations import translations  # Make sure your translations.py includes
 # ---------------------------
 # Google Drive model
 # ---------------------------
-DRIVE_ID = "1gjNwy6mzNU4VfEJ9Mb8A7jMwrhQk30Kf"
 MODEL_PATH = "predictWaste12.h5"
+DRIVE_ID = "1gjNwy6mzNU4VfEJ9Mb8A7jMwrhQk30Kf"
 
 if not os.path.exists(MODEL_PATH):
     st.info("Downloading model from Google Drive...")
-    url = f"https://drive.google.com/uc?id={DRIVE_ID}"
-    gdown.download(url, MODEL_PATH, quiet=False)
+    gdown.download(id=DRIVE_ID, output=MODEL_PATH, quiet=False)
     st.success("Model downloaded!")
-
 # ---------------------------
 # Load model with caching
 # ---------------------------
