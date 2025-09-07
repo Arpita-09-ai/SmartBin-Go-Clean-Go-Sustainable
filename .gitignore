@@ -21,7 +21,7 @@ Thumbs.db
 # ---------------------------
 # Model file (we download it at runtime, no need to track)
 # ---------------------------
-predictWaste12.h5
+#predictWaste12.h5
 
 # ---------------------------
 # Streamlit logs
