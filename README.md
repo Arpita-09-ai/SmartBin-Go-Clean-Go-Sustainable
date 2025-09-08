@@ -16,7 +16,7 @@ It uses a deep learning model to classify waste (plastic, paper, metal, etc.) an
 ## Run Locally
 
 ```bash
-git clone https://github.com/<Arpita-09-ai>/SmartBin-Go-Clean-Go-Sustainable.git
+git clone https://github.com/Arpita-09-ai/SmartBin-Go-Clean-Go-Sustainable.git
 cd SmartBin-Go-Clean-Go-Sustainable
 pip install -r requirements.txt
 streamlit run app.py
